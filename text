@@ -1,0 +1,70 @@
+#for the database configuration
+
+npm install prisma --save-dev
+npm install @prisma/client
+
+npx prisma init
+
+env(DATABASE_URL="mysql://USER:PASSWORD@localhost:3306/crud_db")
+
+#prisma/schema.prisma
+model Item {
+  id    Int    @id @default(autoincrement())
+  name  String
+}
+npx prisma migrate dev --name init
+
+#lib/prisma.ts
+import { PrismaClient } from "@prisma/client";
+
+const globalForPrisma = global as unknown as { prisma: PrismaClient };
+
+export const prisma =
+  globalForPrisma.prisma || new PrismaClient();
+
+if (process.env.NODE_ENV !== "production") {
+  globalForPrisma.prisma = prisma;
+}
+
+#get and post
+import { prisma } from "@/lib/prisma";
+
+export async function GET() {
+  const items = await prisma.item.findMany();
+  return Response.json(items);
+}
+
+export async function POST(req: Request) {
+  const body = await req.json();
+
+  const item = await prisma.item.create({
+    data: {
+      name: body.name,
+    },
+  });
+
+  return Response.json(item);
+}
+
+#update and delete 
+
+import { prisma } from "@/lib/prisma";
+
+export async function PUT(req: Request, { params }: any) {
+  const body = await req.json();
+
+  const updated = await prisma.item.update({
+    where: { id: Number(params.id) },
+    data: { name: body.name },
+  });
+
+  return Response.json(updated);
+}
+
+export async function DELETE(req: Request, { params }: any) {
+  const deleted = await prisma.item.delete({
+    where: { id: Number(params.id) },
+  });
+
+  return Response.json(deleted);
+}
