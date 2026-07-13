@@ -66,3 +66,5 @@ Managing component-level and global state during CRUD operations.
 
 Structuring clean, modular, and reusable components.
 
+📝 License
+This project is open-source and available under the MIT License.
