@@ -41,3 +41,10 @@ cd test-app
 
 # Install dependencies
 npm install
+3. Running the Application
+Start the local development server:
+
+Bash
+npm run dev
+Open http://localhost:3000 with your browser to see the application in action!
+
