@@ -12,3 +12,12 @@ Read: Fetch and display a list of resources dynamically from a mock API.
 
 -Responsive Design: Optimized for seamless viewing across mobile, tablet, and desktop screens.
 
+🛠️ Tech Stack
+-Framework: Next.js
+
+-Styling: Tailwind CSS (or standard CSS modules, depending on what you used!)
+
+-Data Fetching: Fetch API / Axios
+
+-Mock Backend: JSONPlaceholder / ReqRes
+
