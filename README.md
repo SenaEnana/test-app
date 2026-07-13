@@ -27,3 +27,17 @@ Follow these simple steps to get a local copy of the project up and running.
 1. Prerequisites
 Make sure you have Node.js installed on your machine:
 
+Bash
+node -v
+2. Installation
+Clone the repository and install the project dependencies:
+
+Bash
+# Clone the repository
+git clone https://github.com/SenaEnana/test-app
+
+# Navigate into the project directory
+cd test-app
+
+# Install dependencies
+npm install
