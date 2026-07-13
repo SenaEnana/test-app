@@ -57,3 +57,12 @@ Plaintext
 ├── public/           # Static assets like images and icons
 ├── styles/           # Global styles and Tailwind configurations
 └── README.md         # Project documentation
+💡 What I Learned
+Building this application helped reinforce several key web development concepts:
+
+Handling asynchronous API requests within Next.js components.
+
+Managing component-level and global state during CRUD operations.
+
+Structuring clean, modular, and reusable components.
+
