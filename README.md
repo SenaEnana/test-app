@@ -21,3 +21,9 @@ Read: Fetch and display a list of resources dynamically from a mock API.
 
 -Mock Backend: JSONPlaceholder / ReqRes
 
+📦 Getting Started
+Follow these simple steps to get a local copy of the project up and running.
+
+1. Prerequisites
+Make sure you have Node.js installed on your machine:
+
