@@ -38,13 +38,13 @@ node -v
 Clone the repository and install the project dependencies:
 
 Bash
-// Clone the repository
+* Clone the repository
 git clone https://github.com/SenaEnana/test-app
 
-// Navigate into the project directory
+* Navigate into the project directory
 cd test-app
 
-// Install dependencies
+* Install dependencies
 npm install
 ### 3. Running the Application
 
@@ -65,7 +65,7 @@ Plaintext
 ├── styles/           # Global styles and Tailwind configurations
 └── README.md         # Project documentation
 
-##💡 What I Learned
+## 💡 What I Learned
 
 -Building this application helped reinforce several key web development concepts:
 
