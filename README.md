@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Next.js Simple CRUD Application
+A lightweight, responsive CRUD (Create, Read, Update, Delete) web application built using Next.js and a fake/mock REST API. This project was developed as a hands-on practice application to master state management, API data fetching, routing, and UI design in the Next.js ecosystem.
 
-## Getting Started
+🚀 Features
+Read: Fetch and display a list of resources dynamically from a mock API.
 
-First, run the development server:
+-Create: Add new items to the list via a user-friendly modal or dedicated form page.
 
-```bash
+-Update: Edit existing item details with pre-populated form data.
+
+-Delete: Instantly remove items from the UI with immediate state updates.
+
+-Responsive Design: Optimized for seamless viewing across mobile, tablet, and desktop screens.
+
+🛠️ Tech Stack
+-Framework: Next.js
+
+-Styling: Tailwind CSS (or standard CSS modules, depending on what you used!)
+
+-Data Fetching: Fetch API / Axios
+
+-Mock Backend: JSONPlaceholder / ReqRes
+
+📦 Getting Started
+Follow these simple steps to get a local copy of the project up and running.
+
+1. Prerequisites
+Make sure you have Node.js installed on your machine:
+
+Bash
+node -v
+2. Installation
+Clone the repository and install the project dependencies:
+
+Bash
+# Clone the repository
+git clone https://github.com/SenaEnana/test-app
+
+# Navigate into the project directory
+cd test-app
+
+# Install dependencies
+npm install
+3. Running the Application
+Start the local development server:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 with your browser to see the application in action!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📂 Project Structure
+A quick overview of the key directories in this project:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Plaintext
+├── components/       # Reusable UI components (Form, Card, Layout, Navbar)
+├── pages/ or app/    # Next.js routing and page views
+├── public/           # Static assets like images and icons
+├── styles/           # Global styles and Tailwind configurations
+└── README.md         # Project documentation
+💡 What I Learned
+Building this application helped reinforce several key web development concepts:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Handling asynchronous API requests within Next.js components.
 
-## Learn More
+Managing component-level and global state during CRUD operations.
 
-To learn more about Next.js, take a look at the following resources:
+Structuring clean, modular, and reusable components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📝 License
+This project is open-source and available under the MIT License.
