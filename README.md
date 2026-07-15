@@ -56,7 +56,7 @@ Open http://localhost:3000 with your browser to see the application in action!
 
 ## 📂 Project Structure
 
-* A quick overview of the key directories in this project:
+A quick overview of the key directories in this project:
   
 * ├── components/       # Reusable UI components (Form, Card, Layout, Navbar)
 * ├── pages/ or app/    # Next.js routing and page views
